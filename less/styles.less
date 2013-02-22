@@ -1,0 +1,132 @@
+@header_bg: url(../img/header_bg.jpg);
+@header_window: url(../img/header_window.png);
+@header_height: 535px;
+
+@header_title: #372f2b;
+@header_title_size: 50px;
+
+@header_description: #5f5f5f;
+@header_description_size: 18pt;
+
+@arrow_img: url(../img/the-bricks-arrow.png);
+@arrow_color: #FFF;
+@arrow_size: 22px;
+
+@header_updates_black: #372f2b;
+@header_updates_black_size: 10.5pt;
+@header_updates_white: #FFF;
+@header_updates_white_size: 16pt;
+
+@menu_bg: url(../img/menu_bg.png);
+@menu_color: #FFF;
+@menu_size: 12pt;
+
+@slider_text_color: #FFF;
+@slider_text_size: 14pt;
+.header {
+  background: @header_bg;
+  height: @header_height;
+  .arrow {
+    margin-top: 20px;
+    background: @arrow_img;
+    height: 39px;
+    width: 165px;
+    font-size: @arrow_size;
+    text-transform: uppercase;
+    color: @arrow_color;
+    font-family: @HelveticaRounded;
+    text-shadow: 0px -1px 1px rgba(0, 0, 0, 1);
+    line-height: 39px;
+    p {
+      padding-left: 8px;
+    }
+  }
+  .title {
+    margin-top: 35px;
+    color: @header_title;
+    font-size: @header_title_size;
+    text-shadow: -2px 2px 0px rgba(255, 255, 255, 1);
+    font-family: @HelveticaRounded;
+    line-height: 0.9em;
+  }
+  .description {
+    margin-top: 75px;
+    line-height: 1.1em;
+    color: @header_description;
+    font-size: @header_description_size;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+  }
+  .updates{
+    margin-top: 32px;
+
+    color: @header_updates_black;
+    font-size: @header_updates_black_size;
+    text-align: right;
+    font-family: @ProximaNovaBold;
+    font-weight: bold;
+    .white{
+      margin-left: 20px;
+      color: @header_updates_white;
+      font-size: @header_updates_white_size;
+      display: inline;
+      text-shadow: 0px 1px 0px rgba(0, 0, 0, 1);
+      font-family: @ProximaNovaBold;
+    }
+  }
+  .window{
+    background: @header_window;
+    height: 323px;
+    width: 152px;
+    margin-top: 75px;
+  }
+}
+
+
+.menu {
+  background: @menu_bg;
+  height: 55px;
+  width: 940px;
+  margin-top: 65px;
+  .bricks{
+    font-size: @arrow_size;
+    text-transform: uppercase;
+    color: @arrow_color;
+    font-family: @HelveticaRounded;
+    text-shadow: 0px -1px 1px rgba(0, 0, 0, 1);
+    line-height: 55px;
+    display: inline;
+  }
+  .menu_items{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .item{
+    display: inline;
+    color: @menu_color;
+    font-size: @menu_size;
+    padding-left: 15px;
+    a{
+      color: @menu_color;
+      text-decoration: none;
+    }
+  }
+}
+
+.slider{
+  margin-top: 10px;
+  .slide{
+    position: relative;
+    width: 940px;
+    height: 347px;
+    .text{
+      color: @slider_text_color;
+      font-family: @ProximaNovaBold;
+      position: absolute;
+      bottom: 50px;
+      left: 50px;
+      background: #000;
+      padding: 5px;
+
+    }
+  }
+}
